@@ -2,7 +2,7 @@
   "name": "excel_course",
   "version": "1.0.0",
   "description": "Pure JavaScript Excel App",
-  "main": "webpack.commit.js",
+  "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
