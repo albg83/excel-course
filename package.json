@@ -1,0 +1,23 @@
+{
+  "name": "excel_course",
+  "version": "1.0.0",
+  "description": "Pure JavaScript Excel App",
+  "main": "webpack.commit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albg83/excel-course.git"
+  },
+  "keywords": [
+    "javascript",
+    "excel"
+  ],
+  "author": "A.I. Bogoyavlensky <albg83@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albg83/excel-course/issues"
+  },
+  "homepage": "https://github.com/albg83/excel-course#readme"
+}
