@@ -10,9 +10,10 @@ const isDev = !isProd;
 const filename = ext => isProd ? `bundle.[fullhash].${ext}` : `bundle.${ext}`;
 
 module.exports = {
+    target: isDev ? 'web' : 'browserslist',
     context: path.resolve(__dirname,'src'),
     mode: 'development',
-    entry:'./index.js',
+    entry:['@babel/polyfill','./index.js'],
     output: {
         filename: filename('js'),
         path: path.resolve(__dirname, 'dist')
@@ -28,8 +29,8 @@ module.exports = {
     devServer: {
         open: true,
         compress: true,
-        hot: true,
-        port: 8080,
+        hot: isDev,
+        port: 3000,
     },
     plugins: [
         new CleanWebpackPlugin(),
